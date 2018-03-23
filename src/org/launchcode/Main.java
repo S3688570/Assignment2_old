@@ -12,7 +12,7 @@ public class Main {
         Person[] nam = new Person[4];
 
         nam[0] = new Adult("Smith", "John",23, "Working for IBM", "Image1", "Rachel and John", "Simon and John");
-        nam[1] = new Adult("Evans", "Maggie",35, "Studying at RMIT");
+        nam[1] = new Adult("Evans", "Maggie",35, "Studying at RMIT", "Image2");
         nam[2] = new Children("Danny", "Alan", 12);
         nam[3] = new Children("Smith", "Mary",5, "Working for IBM", "Image1", "Rachel and John");
 
