@@ -1,5 +1,6 @@
 package org.launchcode;
 
+import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main {
@@ -20,6 +21,40 @@ public class Main {
             System.out.println(nam.get(i));
             System.out.println();
         }
+    }
+
+    Scanner input = new Scanner(System.in);
+
+    do {
+        System.out.println("1. Add a person to the network");
+        System.out.println("2. Select a person by name");
+        System.out.println("3. Display a person's profile");
+        System.out.println("4. Connect two people as friends");
+        System.out.println("5. Are two people friends?");
+        System.out.println("6. Find out the name(s) of a person's child(ren)");
+        System.out.println("7. Find out the names of a persons parents");
+        System.out.println("8. Exit");
+        int option = input.nextInt();
+
+    switch(option) {
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+        case 5:
+            break;
+        case 6:
+            break;
+        case 7:
+            break;
+        case 8:
+            break;
+        default: System.out.println("Error: invalid status");
+    }
     }
 
 
