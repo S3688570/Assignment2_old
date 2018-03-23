@@ -1,5 +1,7 @@
 package org.launchcode;
 
+import java.util.ArrayList;
+
 public class Main {
     public Main() {
     }
@@ -7,18 +9,20 @@ public class Main {
     public static void main(String[] args) {
 
         //Load the social network
-        Person[] nam = new Person[4];
+        ArrayList<Person> nam = new ArrayList<Person>();
 
-        nam[0] = new Adult("Smith", "John", 23, "Working for IBM", "Image1", "Rachel and John", "Simon and John");
-        nam[1] = new Adult("Evans", "Maggie", 35, "Studying at RMIT", "Image2");
-        nam[2] = new Children("Danny", "Alan", 12);
-        nam[3] = new Children("Smith", "Mary", 5, "Working for IBM", "Image1", "Rachel and John");
+        nam.add(new Adult("Smith", "John", 23, "Working for IBM", "Image1", "Rachel and John", "Simon and John"));
+        nam.add(new Adult("Evans", "Maggie", 35, "Studying at RMIT", "Image2"));
+        nam.add(new Children("Danny", "Alan", 12));
+        nam.add(new Children("Smith", "Mary", 5, "Working for IBM", "Image1", "Rachel and John"));
 
-        for (int i = 0; i < nam.length; i++) {
-            System.out.println(nam[i].toString());
+        for (int i = 0; i < nam.size(); i++) {
+            System.out.println(nam.get(i));
             System.out.println();
         }
     }
+
+
 }
 
 /*
