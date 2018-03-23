@@ -5,6 +5,11 @@ public class Driver {
     public Driver() {
     }
 /*
+    //Display the profile of a person
+    public String printPersonProfile() {
+
+    }
+
     //Add Person to network
     public void addPerson() {
 

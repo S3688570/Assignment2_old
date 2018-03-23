@@ -11,10 +11,10 @@ public class Main {
         //Load the social network
         Person[] nam = new Person[4];
 
-        nam[0] = new Adult("John Smith", 23, "Working for IBM", "Image1", "Rachel and John");
-        nam[1] = new Adult("Maggie Evans", 35, "Studying at RMIT");
-        nam[2] = new Children("Alan Danny", 12);
-        nam[3] = new Children("Mary Smith", 5, "Working for IBM", "Image1", "Rachel and John");
+        nam[0] = new Adult("Smith", "John",23, "Working for IBM", "Image1", "Rachel and John", "Simon and John");
+        nam[1] = new Adult("Evans", "Maggie",35, "Studying at RMIT");
+        nam[2] = new Children("Danny", "Alan", 12);
+        nam[3] = new Children("Smith", "Mary",5, "Working for IBM", "Image1", "Rachel and John");
 
         for (int i = 0; i < nam.length; i++) {
             System.out.println(nam[i].toString());

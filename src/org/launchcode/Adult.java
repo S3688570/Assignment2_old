@@ -1,6 +1,6 @@
 package org.launchcode;
 
-public class Adult extends Person {
+public class Adult extends Person implements PrintProfile{
 
     //List instance variables
     private String friends;
@@ -11,36 +11,36 @@ public class Adult extends Person {
     }
 
     //Construct Friend object with specified parameters
-    public Adult(String name, int age, String status, String image, String friends, String children) {
-        super(name, age, status, image);
+    public Adult(String lastName, String firstName, int age, String status, String image, String friends, String children) {
+        super(lastName, firstName, age, status, image);
         this.friends = friends;
         this.children = children;
     }
 
     //Construct second Friend object with specified parameters
-    public Adult(String name, int age, String status, String image, String friends) {
-        super(name, age, status, image);
+    public Adult(String lastName, String firstName, int age, String status, String image, String friends) {
+        super(lastName, firstName, age, status, image);
         this.friends = friends;
         this.children = null;
     }
 
     //Construct third Friend object with specified parameters
-    public Adult(String name, int age, String status, String image) {
-        super(name, age, status, image);
+    public Adult(String lastName, String firstName, int age, String status, String image) {
+        super(lastName, firstName, age, status, image);
         this.friends = null;
         this.children = null;
     }
 
     //Construct fourth Friend object with specified parameters
-    public Adult(String name, int age, String status) {
-        super(name, age, status, null);
+    public Adult(String lastName, String firstName, int age, String status) {
+        super(lastName, firstName, age, status, null);
         this.friends = null;
         this.children = null;
     }
 
     //Construct fifth Friend object with specified parameters
-    public Adult(String name, int age) {
-        super(name, age, null, null);
+    public Adult(String lastName, String firstName, int age) {
+        super(lastName, firstName, age, null, null);
         this.friends = null;
         this.children = null;
     }
@@ -67,7 +67,7 @@ public class Adult extends Person {
 
     //Return a string listing object parameters
     public String toString() {
-        return "Name:" + getName() + "\nAge: " + getAge() + "\nStatus: " + getStatus() + "\nImage: " + getImage();
+        return "Last Name: " + getLastName() + "\nFirst Name:" + getFirstName() + "\nAge: " + getAge() + "\nStatus: " + getStatus() + "\nImage: " + getImage()+ "\nFriends: " + getFriends() + "\nChildren: " + getChildren();
     }
 }
 

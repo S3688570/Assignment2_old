@@ -3,7 +3,8 @@ package org.launchcode;
 public class Person extends Driver {
 
     //List instance variables
-    private String name;
+    private String lastName;
+    private String firstName;
     private int age;
     private String status;
     private String image;
@@ -13,26 +14,32 @@ public class Person extends Driver {
     }
 
     //Construct Person object containing specified parameters
-    public Person(String name, int age, String status, String image) {
-        this.name = name;
+    public Person(String lastName, String firstName, int age, String status, String image) {
+        this.lastName = lastName;
+        this.firstName = firstName;
         this.age = age;
         this.status = status;
         this.image = image;
     }
 
     //Construct second Person object containing specified parameters
-    public Person(String name, int age, String status) {
-        this(name, age, status, null);
+    public Person(String lastName, String firstName, int age, String status) {
+        this(lastName, firstName, age, status, null);
     }
 
     //Construct third Person object containing specified parameters
-    public Person(String name, int age) {
-        this(name, age, null, null);
+    public Person(String lastName, String firstName, int age) {
+        this(lastName, firstName, age, null, null);
     }
 
-    //Return name of person
-    public String getName() {
-        return name;
+    //Return name of person's first name
+    public String getFirstName() {
+        return firstName;
+    }
+
+    //Return person's last name
+    public String getLastName() {
+        return lastName;
     }
 
     //Return age of person
@@ -55,9 +62,14 @@ public class Person extends Driver {
         age = newAge;
     }
 
-    //Set a person's age
-    public void setName(String newName) {
-        name = newName;
+    //Set a person's first name
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    //Set person's last name
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     //Set a person's status
