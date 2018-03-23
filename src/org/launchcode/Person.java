@@ -1,6 +1,6 @@
 package org.launchcode;
 
-public class Person extends Driver {
+public class Person {
 
     //List instance variables
     private String lastName;
