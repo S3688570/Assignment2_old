@@ -13,6 +13,7 @@ public class Menu {
     //Method to display menu and take input
     public void displayMenu() {
         Scanner input = new Scanner(System.in);
+        int num = 2;
 
         do {
             System.out.println("1. Add a person to the network");
@@ -23,14 +24,14 @@ public class Menu {
             System.out.println("6. Find out the name(s) of a person's child(ren)");
             System.out.println("7. Find out the names of a persons parents");
             System.out.println("8. Exit");
+            int option = input.nextInt();
+            num = option;
 
         }
-        while (input.nextInt() != 1 && input.nextInt() != 2 && input.nextInt() != 3 && input.nextInt() != 4 && input.nextInt() != 5 && input.nextInt() != 6 && input.nextInt() != 7 && input.nextInt() != 8);
+        while (num < 1 && num > 8);
 
-        int option = input.nextInt();
-        int i = 0;
 
-        switch (option) {
+        switch (num) {
             //Add a person to the network
             case 1:
                 AddProfiles array = new AddProfiles();
