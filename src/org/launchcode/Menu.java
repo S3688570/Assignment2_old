@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Menu {
 
+
     //Construct a default constructor
     public Menu() {
 
@@ -38,7 +39,8 @@ public class Menu {
 
             //Select a person by name and print profile
             case 2:
-                System.out.println("test");
+                SearchProfiles search = new SearchProfiles();
+                search.searchName();
                 break;
 
             //Output all profiles
@@ -64,6 +66,8 @@ public class Menu {
                 System.out.println("Error: invalid status");
         }
     }
+
+
 }
 
 
