@@ -24,6 +24,7 @@ public class Main {
     }
 
     Scanner input = new Scanner(System.in);
+    int option = input.nextInt();
 
     do {
         System.out.println("1. Add a person to the network");
@@ -34,11 +35,35 @@ public class Main {
         System.out.println("6. Find out the name(s) of a person's child(ren)");
         System.out.println("7. Find out the names of a persons parents");
         System.out.println("8. Exit");
-        int option = input.nextInt();
+        //int option = input.nextInt();
+    } while(option != 1 && option != 2 && option != 3 && option != 4 && option != 5 && option != 6 && option != 7 && option != 8);
+}
 
-    switch(option) {
-        case 1:
+
+/*        switch(option) {
+        case 1: System.out.println("What is the person's lastName: ");
+        String lastName = input.next();
+
+        System.out.println("What is the person's firstName: ");
+        String firstName = input.next();
+
+        System.out.println("What is the person's age: ");
+        int age = input.nextInt();
+
+        System.out.println("What is the person's status: ");
+        String status = input.next();
+
+        System.out.println("Is there an image: ");
+        String image = input.next();
+
+        System.out.println("What are the first names of this person's friends: ");
+        String friends = input.next();
+
+        System.out.println("What are the first names of this person's children: ");
+        String children = input.next();
+
             break;
+
         case 2:
             break;
         case 3:
