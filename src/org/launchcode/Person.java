@@ -1,6 +1,6 @@
 package org.launchcode;
 
-public class Person {
+public class Person{
 
     //List instance variables
     private String lastName;
@@ -10,26 +10,16 @@ public class Person {
     private String image;
 
     //Construct default Person object
-    public Person() {
+    protected Person() {
     }
 
     //Construct Person object containing specified parameters
-    public Person(String lastName, String firstName, int age, String status, String image) {
+    protected Person(String lastName, String firstName, int age, String status, String image) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.age = age;
         this.status = status;
         this.image = image;
-    }
-
-    //Construct second Person object containing specified parameters
-    public Person(String lastName, String firstName, int age, String status) {
-        this(lastName, firstName, age, status, null);
-    }
-
-    //Construct third Person object containing specified parameters
-    public Person(String lastName, String firstName, int age) {
-        this(lastName, firstName, age, null, null);
     }
 
     //Return name of person's first name
@@ -58,8 +48,8 @@ public class Person {
     }
 
     //Set a person's age
-    public void setAge(int newAge) {
-        age = newAge;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     //Set a person's first name
@@ -74,7 +64,7 @@ public class Person {
 
     //Set a person's status
     public void setStatus(String newStatus) {
-        status = newStatus;
+        this.status = status;
     }
 
     //Set the image
@@ -82,6 +72,6 @@ public class Person {
         this.image = image;
     }
 
-
+//    public abstract void printProfiles();
 }
 

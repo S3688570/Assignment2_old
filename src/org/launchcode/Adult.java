@@ -1,6 +1,6 @@
 package org.launchcode;
 
-public class Adult extends Person implements PrintProfile{
+public class Adult extends Person {
 
     //List instance variables
     private String friends;
@@ -69,5 +69,6 @@ public class Adult extends Person implements PrintProfile{
     public String toString() {
         return "Last Name: " + getLastName() + "\nFirst Name:" + getFirstName() + "\nAge: " + getAge() + "\nStatus: " + getStatus() + "\nImage: " + getImage()+ "\nFriends: " + getFriends() + "\nChildren: " + getChildren();
     }
+
 }
 

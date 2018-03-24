@@ -46,11 +46,15 @@ public class Menu {
 
             //Output all profiles
             case 3:
-                System.out.println("test");
+                Array fullArray = new Array();
+                fullArray.printArray();
                 break;
+
+            //Connect two people as friends
             case 4:
                 System.out.println("test");
                 break;
+
             case 5:
                 System.out.println("test");
                 break;

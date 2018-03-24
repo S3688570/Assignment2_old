@@ -13,6 +13,7 @@ public class Main {
 
         Array array = new Array();
         array.loadArray();
+        array.printArray();
 
         Menu menu = new Menu();
         menu.displayMenu();
