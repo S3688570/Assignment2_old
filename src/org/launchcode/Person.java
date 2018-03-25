@@ -3,8 +3,7 @@ package org.launchcode;
 public abstract class Person extends Array{
 
     //List instance variables
-    private String lastName;
-    private String firstName;
+    private String name;
     private int age;
     private String status;
     private String image;
@@ -15,24 +14,19 @@ public abstract class Person extends Array{
     }
 
     //Construct Person object containing specified parameters
-    protected Person(String lastName, String firstName, int age, String status, String image, String friends) {
-        this.lastName = lastName;
-        this.firstName = firstName;
+    protected Person(String name, int age, String status, String image, String friends) {
+        this.name = name;
         this.age = age;
         this.status = status;
         this.image = image;
         this.friends = friends;
     }
 
-    //Return name of person's first name
-    public String getFirstName() {
-        return firstName;
+    //Return name of person's name
+    public String getName() {
+        return name;
     }
 
-    //Return person's last name
-    public String getLastName() {
-        return lastName;
-    }
 
     //Return age of person
     public int getAge() {
@@ -64,14 +58,9 @@ public abstract class Person extends Array{
         this.age = age;
     }
 
-    //Set a person's first name
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    //Set person's last name
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    //Set a person's name
+    public void setName(String name) {
+        this.name = name;
     }
 
     //Set a person's status

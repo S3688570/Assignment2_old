@@ -10,32 +10,32 @@ public class Children extends Person {
     }
 
     //Construct second Children object with specified parameters
-    public Children(String lastName, String firstName, int age, String status, String image, String friends, String parents) {
-        super(lastName, firstName, age, status, image, friends);
+    public Children(String name, int age, String status, String image, String friends, String parents) {
+        super(name, age, status, image, friends);
         this.parents = parents;
     }
 
     //Construct third Children object with specified parameters
-    public Children(String lastName, String firstName, int age, String status, String image, String friends) {
-        super(lastName, firstName, age, status, image, friends);
+    public Children(String name, int age, String status, String image, String friends) {
+        super(name, age, status, image, friends);
         this.parents = null;
     }
 
     //Construct fourth Children object with specified parameters
-    public Children(String lastName, String firstName, int age, String status, String image) {
-        super(lastName, firstName, age, status, image, null);
+    public Children(String name, int age, String status, String image) {
+        super(name, age, status, image, null);
         this.parents = null;
     }
 
     //Construct fourth Children object with specified parameters
-    public Children(String lastName, String firstName, int age, String status) {
-        super(lastName, firstName, age, status, null, null);
+    public Children(String name, int age, String status) {
+        super(name, age, status, null, null);
         this.parents = null;
     }
 
     //Construct fifth Children object with specified parameters
-    public Children(String lastName, String firstName, int age) {
-        super(lastName, firstName, age, null, null, null);
+    public Children(String name, int age) {
+        super(name, age, null, null, null);
         this.parents = null;
     }
 
@@ -51,7 +51,7 @@ public class Children extends Person {
 
     //Return a string listing all elements in Children object
     public String toString() {
-        return "Last Name:" + getLastName() + "\nFirst Name: " + getFirstName() + "\nAge: " + getAge() + "\nStatus: " + getStatus() + "\nImage: " + getImage() + "\nFriends: " + getFriends() + "\nParents: " + parents;
+        return "Name:" + getName() + "\nAge: " + getAge() + "\nStatus: " + getStatus() + "\nImage: " + getImage() + "\nFriends: " + getFriends() + "\nParents: " + parents;
     }
 
 }

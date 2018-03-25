@@ -11,17 +11,17 @@ public class SearchProfiles extends Array{
 
     //Method to select person's profile
     public void searchName() {
-        System.out.println("Enter person's last name: ");
-        String searchLastName = input.next();
+        System.out.println("Enter person's name: ");
+        String searchPersonName = input.next();
 
-        while (!searchLastName.matches("[a-zA-Z]+")) {
+        while (!searchPersonName.matches("[a-zA-Z]+")) {
             System.out.println("Woops that's not a name!! Please try again: ");
-            searchLastName = input.next();
+            searchPersonName = input.next();
         }
 
         //Print profile for selected person
         for (int i=0; i<nam.size(); i++) {
-            if (searchLastName.equalsIgnoreCase(nam.get(i).getLastName()))
+            if (searchPersonName.equalsIgnoreCase(nam.get(i).getName()))
                 System.out.println(nam.get(i));
             System.out.println();
         }

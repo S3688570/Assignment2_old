@@ -53,19 +53,28 @@ public class Menu {
 
                 //Connect two people as friends
                 case 4:
-                    SetFriends friends = new SetFriends();
-                    friends.addFriend();
+                    //Retrieve and check ages of friends
+                    SetFriends setFriends = new SetFriends();
+                    setFriends.checkAges();
+
+                    //Set two people as friends
+                    setFriends.addFriend();
                     menuOpt.displayMenu();
                     break;
 
                 //Are two people friends?
                 case 5:
-                    System.out.println("test");
+                    TwoFriends twoFriends = new TwoFriends();
+                    twoFriends.areFriends();
+                    menuOpt.displayMenu();
                     break;
 
+                //Find out the name(s) of a person's child(ren)
                 case 6:
                     System.out.println("test");
+                    menuOpt.displayMenu();
                     break;
+
                 case 7:
                     System.out.println("test");
                     break;

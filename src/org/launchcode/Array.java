@@ -14,10 +14,12 @@ public class Array {
     //Load the social network
     public static void loadArray() {
 
-        nam.add(new Adult("Smith", "John", 23, "Working for IBM", "Image1", "Rachel and John", "Simon and John"));
-        nam.add(new Adult("Evans", "Maggie", 35, "Studying at RMIT", "Image2"));
-        nam.add(new Children("Danny", "Alan", 12));
-        nam.add(new Children("Smith", "Mary", 5, "Working for IBM", "Image1", "Rachel and John"));
+        nam.add(new Adult("John Heron", 12, "Working for IBM", "Image1", "Maggie Evans", "Simon and John"));
+        nam.add(new Adult("Maggie Evans", 35, "Studying at RMIT", "Image2", "John Heron"));
+        nam.add(new Children("Alan Danny", 2));
+        nam.add(new Children("Mary Smith", 5, "Playing", "Image1"));
+        nam.add(new Children("Tom Thomas", 4, "Working for IBM", "Image10"));
+
     }
 
     public void printArray() {

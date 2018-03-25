@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class AddProfiles extends Array {
     private String personCat;
-    private String newLastName;
-    private String newFirstName;
+    private String newName;
     private int newAge = 0;
     private String newStatus;
     private String newImage;
@@ -23,20 +22,12 @@ public class AddProfiles extends Array {
         Scanner input = new Scanner(System.in);
         boolean isString;
 
-        //Input the person's last name
-        System.out.println("What is the person's last name: ");
-        newLastName = input.next();
-        while (!newLastName.matches("[a-zA-Z]+")) {
+        //Input the person's name
+        System.out.println("What is the person's name: ");
+        newName = input.nextLine();
+        while (!newName.matches("[a-zA-Z]+")) {
             System.out.println("Woops that's not a name!! Please try again: ");
-            newLastName = input.next();
-        }
-
-        //Input the person's first name
-        System.out.println("What is the person's firstName: ");
-        newFirstName = input.next();
-        while (!newFirstName.matches("[a-zA-Z]+")) {
-            System.out.println("Woops that's not a name!! Please try again: ");
-            newFirstName = input.next();
+            newName = input.nextLine();
         }
 
         //Input the person's age
@@ -79,7 +70,7 @@ public class AddProfiles extends Array {
         }
 
         //Input the person's friend's first name
-        System.out.println("What are the first names of this person's friends: ");
+        System.out.println("What are the names of this person's friends: ");
         newFriends = input.next();
         while (!newFriends.matches("[a-zA-Z]+")) {
             System.out.println("Woops that's not a friend's name!! Please try again: ");
@@ -96,14 +87,14 @@ public class AddProfiles extends Array {
 
         //Determine whether person is an adult or child based on age
         if (personCat.equals("adult")) {
-            nam.add(new Adult(newLastName, newFirstName, newAge, newStatus, newImage, newFriends, newChildren));
+            nam.add(new Adult(newName, newAge, newStatus, newImage, newFriends, newChildren));
         } else {
-            nam.add(new Children(newLastName, newFirstName, newAge, newStatus, newImage, newFriends));
+            nam.add(new Children(newName, newAge, newStatus, newImage, newFriends));
         }
 
         //Print new profile
         for (int i=0; i<nam.size(); i++) {
-            if (newLastName.equalsIgnoreCase(nam.get(i).getLastName()))
+            if (newName.equalsIgnoreCase(nam.get(i).getName()))
                 System.out.println(nam.get(i));
             System.out.println();
         }
