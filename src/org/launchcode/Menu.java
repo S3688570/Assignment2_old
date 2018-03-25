@@ -76,8 +76,11 @@ public class Menu {
                     menuOpt.displayMenu();
                     break;
 
+                //Find out the names of a persons parents
                 case 7:
-                    System.out.println("test");
+                    FindParents par = new FindParents();
+                    par.findParents();
+                    menuOpt.displayMenu();
                     break;
                 case 8:
                     System.out.println("Exit");
