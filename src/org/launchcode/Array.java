@@ -15,7 +15,7 @@ public class Array {
     public static void loadArray() {
 
         nam.add(new Adult("John Heron", 12, "Working for IBM", "Image1", "Maggie Evans", "Simon and John"));
-        nam.add(new Adult("Maggie Evans", 35, "Studying at RMIT", "Image2", "John Heron"));
+        nam.add(new Adult("Maggie Evans", 35, "Studying at RMIT", "Image2", "John Heron", "Bre"));
         nam.add(new Children("Alan Danny", 2));
         nam.add(new Children("Mary Smith", 5, "Playing", "Image1"));
         nam.add(new Children("Tom Thomas", 4, "Working for IBM", "Image10"));

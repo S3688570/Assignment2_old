@@ -1,7 +1,6 @@
 package org.launchcode;
 
 public class Adult extends Person {
-    private String children;
 
     //Construct default Adult object
     public Adult() {
@@ -9,41 +8,27 @@ public class Adult extends Person {
 
     //Construct Friend object with specified parameters
     public Adult(String name, int age, String status, String image, String friends, String children) {
-        super(name, age, status, image, friends);
-        this.children = children;
+        super(name, age, status, image, friends, null, children);
     }
 
     //Construct second Friend object with specified parameters
     public Adult(String name, int age, String status, String image, String friends) {
-        super(name, age, status, image, friends);
-        this.children = null;
+        super(name, age, status, image, friends, null, null);
     }
 
     //Construct third Friend object with specified parameters
     public Adult(String name, int age, String status, String image) {
-        super(name, age, status, image, null);
+        super(name, age, status, image, null, null, null);
     }
 
     //Construct fourth Friend object with specified parameters
     public Adult(String name, int age, String status) {
-        super(name, age, status, null, null);
-        this.children = null;
+        super(name, age, status, null, null, null, null);
     }
 
     //Construct fifth Friend object with specified parameters
     public Adult(String name, int age) {
-        super(name, age, null, null, null);
-        this.children = null;
-    }
-
-    //Return child(ren) name(s)
-    public String getChildren() {
-        return children;
-    }
-
-    //Set child(ren) name(s)
-    public void setChildren(String children) {
-        this.children = children;
+        super(name, age, null, null, null, null, null);
     }
 
     //Return a string listing object parameters

@@ -13,6 +13,7 @@ public class SetFriends extends Person {
     private static boolean ageOK = true;
     private int firstPersonAge = 1000;
     private int secondPersonAge = 1000;
+    private String inWord;
 
     //Construct default SetFriends object
     public SetFriends() {
@@ -56,6 +57,11 @@ public class SetFriends extends Person {
     //Return boolean variable ageOK
     public static boolean isAgeOK() {
         return ageOK;
+    }
+
+    //Return input word
+    public String getInWord() {
+        return inWord;
     }
 
     //Check the ages of the two friends

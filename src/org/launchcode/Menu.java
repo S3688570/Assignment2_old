@@ -71,7 +71,8 @@ public class Menu {
 
                 //Find out the name(s) of a person's child(ren)
                 case 6:
-                    System.out.println("test");
+                    FindChildren find = new FindChildren();
+                    find.findChild();
                     menuOpt.displayMenu();
                     break;
 
