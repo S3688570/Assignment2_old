@@ -8,10 +8,13 @@ public class FindParents extends Children {
 
     //List variables
     private String children;
+    private String parents = "None";
 
+    //Default FindParents object
     public FindParents() {
     }
 
+    //Method to retrieve a child's parent's names from the database
     public void findParents() {
         //Enter a child's name
         System.out.println("Please enter the name of the child");
@@ -21,14 +24,34 @@ public class FindParents extends Children {
             children = input.nextLine();
         }
 
+        //Are the person's parents recorded in the database
         for (int i = 0; i < nam.size(); i++) {
             if (children.equalsIgnoreCase(nam.get(i).getName())) {
-                System.out.println(nam.get(i).getParents());
-                System.out.println();
-                break;
+                if (nam.get(i).getParents() == null) {
+                    parents = "No";
+                    System.out.println("That person's parents are not recorded in the database.");
+                    System.out.println();
+                    break;
+                }
             }
         }
-        System.out.println("That name is not in the database.");
-        System.out.println();
+
+        //Retrieve child(ren)'s names for person in database
+        for (int i = 0; i < nam.size(); i++) {
+            if (children.equalsIgnoreCase(nam.get(i).getName())) {
+                if ((nam.get(i).getParents()) != null) {
+                    parents = nam.get(i).getParents();
+                    System.out.println(parents + " are the parents of " + children);
+                    System.out.println();
+                    break;
+                }
+            }
+        }
+
+        //Child is not in database
+        if (parents.equals("None")) {
+            System.out.println("That person is not in the database.");
+            System.out.println();
+        }
     }
 }

@@ -82,9 +82,11 @@ public class Menu {
                     par.findParents();
                     menuOpt.displayMenu();
                     break;
+
                 case 8:
                     System.out.println("Exit");
                     break;
+                    
                 default:
                     System.out.println("Test");
             }

@@ -7,13 +7,13 @@ public class Adult extends Person {
     }
 
     //Construct Friend object with specified parameters
-    public Adult(String name, int age, String status, String image, String friends, String children) {
-        super(name, age, status, image, friends, null, children);
+    public Adult(String name, int age, String status, String image, String friends, String parents, String children) {
+        super(name, age, status, image, friends, parents, children);
     }
 
     //Construct second Friend object with specified parameters
-    public Adult(String name, int age, String status, String image, String friends) {
-        super(name, age, status, image, friends, null, null);
+    public Adult(String name, int age, String status, String image, String friends, String parents) {
+        super(name, age, status, image, friends, parents, null);
     }
 
     //Construct third Friend object with specified parameters

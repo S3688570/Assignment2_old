@@ -14,7 +14,6 @@ public class AddProfiles extends Array {
 
     //Construct default AddProfile object
     public AddProfiles() {
-
     }
 
     //Add profile to arrayList
@@ -25,24 +24,25 @@ public class AddProfiles extends Array {
         //Input the person's name
         System.out.println("What is the person's name: ");
         newName = input.nextLine();
-        while (!newName.matches("[a-zA-Z]+")) {
+        while (!newName.matches("[a-zA-Z ]+")) {
             System.out.println("Woops that's not a name!! Please try again: ");
             newName = input.nextLine();
         }
 
         //Input the person's age
         boolean isNumber;
-        //int newAge = input.nextInt();
         do {
             System.out.println("What is the person's age: ");
-            //   newAge = input.nextInt();
             if (input.hasNextInt()) {
                 newAge = input.nextInt();
                 isNumber = true;
             } else {
                 System.out.println("Woops that is not a number. Try again: ");
                 isNumber = false;
-                input.next();
+            }
+            if (newAge < 0 || newAge > 120) {
+                System.out.println("That is an incorrect age. Try again: ");
+                isNumber = false;
             }
         } while (!(isNumber));
 
@@ -55,34 +55,34 @@ public class AddProfiles extends Array {
 
         //Input the person's status
         System.out.println("What is the person's status: ");
-        newStatus = input.next();
-        while (!newStatus.matches("[a-zA-Z]+")) {
+        newStatus = input.nextLine();
+        while (!newStatus.matches("[a-zA-Z ]+")) {
             System.out.println("Woops that's not a status!! Please try again: ");
-            newStatus = input.next();
+            newStatus = input.nextLine();
         }
 
         //Input an image name
         System.out.println("Is there an image name: ");
-        newImage = input.next();
-        while (!newImage.matches("[a-zA-Z]+")) {
+        newImage = input.nextLine();
+        while (!newImage.matches("[a-zA-Z ]+")) {
             System.out.println("Woops that's not a image name!! Please try again: ");
-            newImage = input.next();
+            newImage = input.nextLine();
         }
 
         //Input the person's friend's first name
-        System.out.println("What are the names of this person's friends: ");
-        newFriends = input.next();
-        while (!newFriends.matches("[a-zA-Z]+")) {
+        System.out.println("What are the names of this person's friend: ");
+        newFriends = input.nextLine();
+        while (!newFriends.matches("[a-zA-Z ]+")) {
             System.out.println("Woops that's not a friend's name!! Please try again: ");
-            newFriends = input.next();
+            newFriends = input.nextLine();
         }
 
         //Input the person's child(ren)'s first name
         System.out.println("What are the first names of this person's children: ");
-        newChildren = input.next();
-        while (!newChildren.matches("[a-zA-Z]+")) {
+        newChildren = input.nextLine();
+        while (!newChildren.matches("[a-zA-Z ]+")) {
             System.out.println("Woops that's not a child's name!! Please try again: ");
-            newChildren = input.next();
+            newChildren = input.nextLine();
         }
 
         //Determine whether person is an adult or child based on age
@@ -93,7 +93,7 @@ public class AddProfiles extends Array {
         }
 
         //Print new profile
-        for (int i=0; i<nam.size(); i++) {
+        for (int i = 0; i < nam.size(); i++) {
             if (newName.equalsIgnoreCase(nam.get(i).getName()))
                 System.out.println(nam.get(i));
             System.out.println();
