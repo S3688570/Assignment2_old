@@ -86,9 +86,11 @@ public class Menu {
                 case 8:
                     System.out.println("Exit");
                     break;
-                    
+
                 default:
-                    System.out.println("Test");
+                    System.out.println("Incorrect input. Try again: ");
+                    System.out.println();
+                    menuOpt.displayMenu();
             }
         }
     }
