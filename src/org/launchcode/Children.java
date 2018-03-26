@@ -7,27 +7,27 @@ public class Children extends Person {
     }
 
     //Construct second Children object with specified parameters
-    public Children(String name, int age, String status, String image, String friends, String parents, String children) {
+    public Children(String name, String age, String status, String image, String friends, String parents, String Children) {
         super(name, age, status, image, friends, parents, null);
     }
 
     //Construct third Children object with specified parameters
-    public Children(String name, int age, String status, String image, String friends) {
+    public Children(String name, String age, String status, String image, String friends) {
         super(name, age, status, image, friends, null, null);
     }
 
     //Construct fourth Children object with specified parameters
-    public Children(String name, int age, String status, String image) {
+    public Children(String name, String age, String status, String image) {
         super(name, age, status, image, null, null, null);
     }
 
     //Construct fourth Children object with specified parameters
-    public Children(String name, int age, String status) {
+    public Children(String name, String age, String status) {
         super(name, age, status, null, null, null, null);
     }
 
     //Construct fifth Children object with specified parameters
-    public Children(String name, int age) {
+    public Children(String name, String age) {
         super(name, age, null, null, null, null, null);
     }
 

@@ -4,7 +4,7 @@ public abstract class Person extends Array{
 
     //List instance variables
     private String name;
-    private int age;
+    private String age;
     private String status;
     private String image;
     private String friends;
@@ -16,7 +16,7 @@ public abstract class Person extends Array{
     }
 
     //Construct Person object containing specified parameters
-    protected Person(String name, int age, String status, String image, String friends, String parents, String children) {
+    protected Person(String name, String age, String status, String image, String friends, String parents, String children) {
         this.name = name;
         this.age = age;
         this.status = status;
@@ -33,7 +33,7 @@ public abstract class Person extends Array{
 
 
     //Return age of person
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
@@ -78,7 +78,7 @@ public abstract class Person extends Array{
     }
 
     //Set a person's age
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 

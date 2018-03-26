@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class SearchProfiles extends Array{
     Scanner input = new Scanner(System.in);
-    Array array = new Array();
+
+    private int searchPersonNumber = 1000;
+    private String searchPersonName;
 
     public SearchProfiles() {
     }
@@ -12,11 +14,21 @@ public class SearchProfiles extends Array{
     //Method to select person's profile
     public void searchName() {
         System.out.println("Enter person's name: ");
-        String searchPersonName = input.next();
+        searchPersonName = input.nextLine();
 
-        while (!searchPersonName.matches("[a-zA-Z]+")) {
+        while (!searchPersonName.matches("[a-zA-Z ]+")) {
             System.out.println("Woops that's not a name!! Please try again: ");
-            searchPersonName = input.next();
+            searchPersonName = input.nextLine();
+        }
+
+        for (int i = 0; i < nam.size(); i++) {
+            if (searchPersonName.equalsIgnoreCase(nam.get(i).getName())) {
+                searchPersonNumber = 10;
+            }
+        }
+        if (searchPersonNumber == 1000) {
+            System.out.println("This person is not in this database");
+            System.out.println();
         }
 
         //Print profile for selected person

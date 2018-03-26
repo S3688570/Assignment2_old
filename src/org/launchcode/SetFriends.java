@@ -66,9 +66,9 @@ public class SetFriends extends Person {
 
     //Check the ages of the two friends
     public void checkAges() {
-        System.out.println("Please enter the names of the two friends: ");
 
         //Enter first friend
+        System.out.println("Please enter the name of the first person: ");
         firstFriend = input.nextLine();
         while (!firstFriend.matches("[a-zA-Z ]+")) {
             System.out.println("Woops that's not a name!! Please try again: ");
@@ -76,6 +76,7 @@ public class SetFriends extends Person {
         }
 
         //Enter second friend
+        System.out.println("Please enter the name of the second person: ");
         secondFriend = input.nextLine();
         System.out.println();
         while (!secondFriend.matches("[a-zA-Z ]+")) {
@@ -86,12 +87,12 @@ public class SetFriends extends Person {
         //Retrieve the ages for the two friends
         for (int i = 0; i < nam.size(); i++) {
             if (firstFriend.equalsIgnoreCase(nam.get(i).getName())) {
-                firstPersonAge = ((nam.get(i).getAge()));
+                firstPersonAge = Integer.parseInt(nam.get(i).getAge());
             } else if (secondFriend.equalsIgnoreCase(nam.get(i).getName())) {
-                secondPersonAge = ((nam.get(i).getAge()));
+                secondPersonAge = Integer.parseInt(nam.get(i).getAge());
             }
         }
-        if (firstPersonAge == 1000 | firstPersonAge == 1000) {
+        if (firstPersonAge == 1000 || secondPersonAge == 1000) {
             System.out.println("One of these people is not on this database");
             System.out.println();
             ageOK = false;

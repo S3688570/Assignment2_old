@@ -65,7 +65,8 @@ public class Menu {
                 //Are two people friends?
                 case 5:
                     TwoFriends twoFriends = new TwoFriends();
-                    twoFriends.areFriends();
+                    twoFriends.areFriendsFirstPerson();
+                    twoFriends.areFriendsSecondPerson();
                     menuOpt.displayMenu();
                     break;
 

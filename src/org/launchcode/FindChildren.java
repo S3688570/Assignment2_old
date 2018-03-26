@@ -8,6 +8,7 @@ public class FindChildren extends Adult {
 
     //List variables
     private String parent;
+    private int parentNumber = 10;
 
     public FindChildren() {
     }
@@ -26,6 +27,17 @@ public class FindChildren extends Adult {
                 System.out.println(nam.get(i).getChildren());
                 System.out.println();
             }
+        }
+
+        for (int i = 0; i < nam.size(); i++) {
+            if (parent.equalsIgnoreCase(nam.get(i).getName())) {
+                parentNumber = 5;
+            }
+        }
+
+        if (parentNumber == 10) {
+            System.out.println("This person is not in the database.");
+            System.out.println();
         }
     }
 }
