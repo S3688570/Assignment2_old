@@ -2,9 +2,9 @@ package org.launchcode;
 
 import java.util.Scanner;
 
-public class Driver {
+public class MiniNet {
 
-    public Driver() {
+    public MiniNet() {
     }
 
     public static void main(String args[]) {
@@ -21,3 +21,4 @@ public class Driver {
 
     }
 }
+
