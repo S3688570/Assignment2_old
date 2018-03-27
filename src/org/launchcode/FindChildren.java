@@ -3,6 +3,7 @@ package org.launchcode;
 import java.util.Scanner;
 
 public class FindChildren extends Adult {
+    //Created by Charles Galea (March 2018)
 
     Scanner input = new Scanner(System.in);
 

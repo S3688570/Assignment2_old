@@ -1,6 +1,7 @@
 package org.launchcode;
 
 public class Children extends Person {
+    //Created by Charles Galea (March 2018)
 
     //Construct default Children object
     public Children() {

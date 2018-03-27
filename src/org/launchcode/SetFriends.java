@@ -1,9 +1,10 @@
 package org.launchcode;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class SetFriends extends Person {
+    //Created by Charles Galea (March 2018)
+
     Scanner input = new Scanner(System.in);
 
     //List variables

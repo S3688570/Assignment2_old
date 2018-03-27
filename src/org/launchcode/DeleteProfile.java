@@ -3,6 +3,8 @@ package org.launchcode;
 import java.util.Scanner;
 
 public class DeleteProfile extends Array {
+    //Created by Charles Galea (March 2018)
+
     Scanner input = new Scanner(System.in);
 
     //List variables

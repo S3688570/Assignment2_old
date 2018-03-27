@@ -3,6 +3,7 @@ package org.launchcode;
 import java.util.Scanner;
 
 public class FindParents extends Children {
+    //Created by Charles Galea (March 2018)
 
     Scanner input = new Scanner(System.in);
 

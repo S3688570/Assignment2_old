@@ -3,6 +3,9 @@ package org.launchcode;
 import java.util.Scanner;
 
 public class AddProfiles extends Array {
+    //Created by Charles Galea (March 2018)
+
+    //List variables
     private String personCat;
     private String newName;
     private String newStatus;

@@ -1,6 +1,7 @@
 package org.launchcode;
 
 public class Adult extends Person {
+    //Created by Charles Galea (March 2018)
 
     //Construct default Adult object
     public Adult() {

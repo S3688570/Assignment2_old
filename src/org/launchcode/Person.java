@@ -1,6 +1,7 @@
 package org.launchcode;
 
 public abstract class Person extends Array{
+    //Created by Charles Galea (March 2018)
 
     //List instance variables
     private String name;

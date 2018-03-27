@@ -1,16 +1,16 @@
 package org.launchcode;
 
-import java.util.Calendar;
 import java.util.Scanner;
 
-public class Menu {
+public class Driver {
+    //Created by Charles Galea (March 2018)
 
     int option;
 
-    static Menu menuOpt = new Menu();
+    static Driver menuOpt = new Driver();
 
     //Construct a default constructor
-    public Menu() {
+    public Driver() {
     }
 
     //Method to display menu and take input
@@ -99,9 +99,4 @@ public class Menu {
         }
     }
 }
-
-
-
-
-
 

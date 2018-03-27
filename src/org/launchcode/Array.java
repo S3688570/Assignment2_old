@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 
 public class Array {
+    //Created by Charles Galea (March 2018)
 
     static ArrayList<Person> nam = new ArrayList<Person>();
 

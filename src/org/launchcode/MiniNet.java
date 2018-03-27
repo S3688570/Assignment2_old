@@ -3,6 +3,7 @@ package org.launchcode;
 import java.util.Scanner;
 
 public class MiniNet {
+    //Created by Charles Galea (March 2018)
 
     public MiniNet() {
     }
@@ -16,7 +17,7 @@ public class MiniNet {
         array.printArray();
 
 
-        Menu menu = new Menu();
+        Driver menu = new Driver();
         menu.displayMenu();
 
     }
