@@ -33,9 +33,10 @@ public class SearchProfiles extends Array{
 
         //Print profile for selected person
         for (int i=0; i<nam.size(); i++) {
-            if (searchPersonName.equalsIgnoreCase(nam.get(i).getName()))
+            if (searchPersonName.equalsIgnoreCase(nam.get(i).getName())) {
                 System.out.println(nam.get(i));
-            System.out.println();
+                System.out.println();
+            }
         }
     }
 }

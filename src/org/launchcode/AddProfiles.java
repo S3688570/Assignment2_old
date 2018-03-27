@@ -70,7 +70,7 @@ public class AddProfiles extends Array {
         System.out.println("Is there an image name: ");
         newImage = input.nextLine();
 
-        while (!newImage.matches("[a-zA-Z ]+")) {
+        while (!newImage.matches("[a-zA-Z1-9 ]+")) {
             System.out.println("Woops that's not a image name!! Please try again: ");
             newImage = input.nextLine();
         }

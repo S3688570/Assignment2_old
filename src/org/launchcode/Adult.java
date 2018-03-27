@@ -33,7 +33,7 @@ public class Adult extends Person {
 
     //Return a string listing object parameters
     public String toString() {
-        return "Name: " + getName() + "\nAge: " + getAge() + "\nStatus: " + getStatus() + "\nImage: " + getImage()+ "\nFriends: " + getFriends() + "\nChildren: " + getChildren();
+        return "Name: " + getName() + "\nAge: " + getAge() + "\nStatus: " + getStatus() + "\nImage: " + getImage()+ "\nFriends: " + getFriends() + "\nParents: " + getParents() + "\nChildren: " + getChildren();
     }
 
 }

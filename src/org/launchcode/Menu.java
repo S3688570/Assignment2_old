@@ -1,9 +1,12 @@
 package org.launchcode;
 
+import java.util.Calendar;
 import java.util.Scanner;
 
 public class Menu {
+
     int option;
+
     static Menu menuOpt = new Menu();
 
     //Construct a default constructor
@@ -23,7 +26,8 @@ public class Menu {
                 System.out.println("5. Are two people friends?");
                 System.out.println("6. Find out the name(s) of a person's child(ren)");
                 System.out.println("7. Find out the names of a persons parents");
-                System.out.println("8. Quit");
+                System.out.println("8. Delete a person's record.");
+                System.out.println("9. Quit");
             }
             while (option < 1 && option > 8);
 
@@ -85,6 +89,12 @@ public class Menu {
                     break;
 
                 case 8:
+                    DeleteProfile del = new DeleteProfile();
+                    del.deleteProfile();
+                    menuOpt.displayMenu();
+                    break;
+
+                case 9:
                     System.out.println("Exit");
                     break;
 

@@ -97,7 +97,8 @@ public abstract class Person extends Array{
         this.image = image;
     }
 
-
+    //Return a string listing object parameters
+    public abstract String toString();
 
 //    public abstract void printProfiles();
 }
