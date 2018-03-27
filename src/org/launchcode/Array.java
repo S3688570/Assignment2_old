@@ -33,6 +33,8 @@ public class Array {
         nam.add(new Adult("Trish Donnell", "20", "Studying at RMIT", "Image14", "Dean MacIntosch", "Fay and John Donnell", "none"));
         nam.add(new Adult("Kay MacIntosch", "54", "Working for Dept of Primary Industries", "Image20", "Maggie Evans", "Carmel and Robbie Zammit", "Dean and Lucy"));
         nam.add(new Adult("Fred MacIntosch", "57", "Working for the CSIRO", "Image21", "Jo MacRay", "Sam and Joy MacIntosch", "Dean and Lucy"));
+        nam.add(new Adult("Jason Hugh", "22", "Studting at Monash", "Image27", "Sid Simon", "Tiggy abd Vince Hugh", "none"));
+
 
     }
 
