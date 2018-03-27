@@ -11,6 +11,8 @@ public class AddProfiles extends Array {
     private String newFriends;
     private String newParents;
     private String newChildren;
+    private boolean isNumber;
+
 
     Scanner input = new Scanner(System.in);
 
@@ -31,7 +33,6 @@ public class AddProfiles extends Array {
         }
 
         //Input the person's age
-        boolean isNumber;
         do {
             System.out.println("What is the person's age: ");
             if (input.hasNextInt()) {
@@ -40,6 +41,7 @@ public class AddProfiles extends Array {
             } else {
                 System.out.println("Woops that is not a number. Try again: ");
                 isNumber = false;
+                input.next();
             }
             if (newAge < 0 || newAge > 120) {
                 System.out.println("That is an incorrect age. Try again: ");
