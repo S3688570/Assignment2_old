@@ -23,7 +23,7 @@ public class Array {
         nam.add(new Children("Bre Evans", "15", "School", "none", "John Heron", "Maggie and Chuck Evans", "none"));
         nam.add(new Adult("John Simon", "44", "Freelance", "Image5", "Cisco Draper", "Justine and Roy Simon", "Sid and Lucy"));
         nam.add(new Adult("Mary Simon", "42", "Looking for job", "Image3", "Joanne Heron", "Paul and Ivy MacRay", "Sid and Lucy"));
-        nam.add(new Children("Sid Simon", "3", "Working at KPMG", "Image3", "Joanne Heron", "John  and Mary Simon", "none"));
+        nam.add(new Children("Sid Simon", "3", "Day Care", "Image3", "Joanne Heron", "John  and Mary Simon", "none"));
         nam.add(new Children("Lucy Simon", "7", "School", "none", "Tom Thomas", "John  and Mary Simon", "none"));
         nam.add(new Adult("Cisco Draper", "45", "Studying at RMIT", "Image6", "John Simon", "Luke and Tash Draper", "Michael"));
         nam.add(new Adult("Maria Draper", "42", "Working at BHP", "Image7", "Chuck Evans", "Gina and Joseph Formosa", "Michael"));

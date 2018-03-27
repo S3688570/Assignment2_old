@@ -90,11 +90,22 @@ public class Driver {
                     menuOpt.displayMenu();
                     break;
 
+               //Delete a person's profile
                 case 8:
                     DeleteProfile del = new DeleteProfile();
                     del.deleteProfile();
                     menuOpt.displayMenu();
+                    break;
 
+                //Exit menu
+                case 9:
+                    System.out.println("Exit");
+                    break;
+
+                //Default case for incorrect entry
+                default:
+                    System.out.println("Error: invalid status");
+                    System.exit(1);
             }
         }
     }
