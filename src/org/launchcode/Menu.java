@@ -92,16 +92,7 @@ public class Menu {
                     DeleteProfile del = new DeleteProfile();
                     del.deleteProfile();
                     menuOpt.displayMenu();
-                    break;
 
-                case 9:
-                    System.out.println("Exit");
-                    break;
-
-                default:
-                    System.out.println("Incorrect input. Try again: ");
-                    System.out.println();
-                    menuOpt.displayMenu();
             }
         }
     }
