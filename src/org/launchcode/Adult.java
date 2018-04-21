@@ -1,7 +1,18 @@
 package org.launchcode;
 
-public class Adult extends Person {
+/**
+ * Creates an adult profile.
+ * <p>Includes the person's name, age,
+ * status, friends and children. There is also the potion to
+ * include a profile image.
+ * </p>
+ * @see Person
+ *
+ * @param name
+ */
+public class Adult extends Person implements PrintPerson{
     //Created by Charles Galea (March 2018)
+
 
     //Construct default Adult object
     public Adult() {
@@ -32,10 +43,11 @@ public class Adult extends Person {
         super(name, age, null, null, null, null, null);
     }
 
-    //Return a string listing object parameters
+    //Print profile parameters
     public String toString() {
-        return "Name: " + getName() + "\nAge: " + getAge() + "\nStatus: " + getStatus() + "\nImage: " + getImage()+ "\nFriends: " + getFriends() + "\nParents: " + getParents() + "\nChildren: " + getChildren();
+        return "Name:" + getName() + "\nAge: " + getAge() + "\nStatus: " + getStatus() + "\nImage: " + getImage() + "\nParents: " + getParents();
     }
+
 
 }
 

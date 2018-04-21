@@ -1,6 +1,6 @@
 package org.launchcode;
 
-public class Children extends Person {
+public class Children extends Person implements PrintPerson{
     //Created by Charles Galea (March 2018)
 
     //Construct default Children object
@@ -8,7 +8,7 @@ public class Children extends Person {
     }
 
     //Construct second Children object with specified parameters
-    public Children(String name, String age, String status, String image, String friends, String parents, String Children) {
+    public Children(String name, String age, String status, String image, String friends, String parents, String children) {
         super(name, age, status, image, friends, parents, null);
     }
 
@@ -32,10 +32,11 @@ public class Children extends Person {
         super(name, age, null, null, null, null, null);
     }
 
-    //Return a string listing all elements in Children object
+    //Print profile parameters
     public String toString() {
-        return "Name:" + getName() + "\nAge: " + getAge() + "\nStatus: " + getStatus() + "\nImage: " + getImage() + "\nFriends: " + getFriends() + "\nParents: " + getParents();
+        return "Name:" + getName() + "\nAge: " + getAge() + "\nStatus: " + getStatus() + "\nImage: " + getImage() + "\nParents: " + getParents();
     }
+
 
 }
 
