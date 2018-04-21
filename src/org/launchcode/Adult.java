@@ -8,7 +8,6 @@ package org.launchcode;
  * </p>
  * @see Person
  *
- * @param name
  */
 public class Adult extends Person implements PrintPerson{
     //Created by Charles Galea (March 2018)
