@@ -1,6 +1,10 @@
 package org.launchcode;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 
 public class Array {
@@ -14,7 +18,30 @@ public class Array {
     //Load the social network
     public static void loadArray() {
 
-        nam.add(new Adult("Simon Heron", "37", "Working for KFC", "Image4", "Sid Simon", "Eve and Steve Heron", "Evan"));
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter a filename: ");
+        String fname = keyboard.nextLine();
+        ArrayList<String> list = new ArrayList<String>();
+        try {
+            Scanner in = new Scanner(new File(fname));
+            while (in.hasNext()) {
+                String value = in.nextLine();
+                list.add(value);
+            }
+            in.close();
+        } catch (IOException e) {
+            System.out.println("Error! File "+fname+" not found!");
+            System.exit(0);
+        } catch (InputMismatchException e) {
+            System.out.println("Error! Non string in file "+fname);
+            System.exit(0);
+        }
+        for (int i=0; i<list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+    }
+
+     /*   nam.add(new Adult("Simon Heron", "37", "Working for KFC", "Image4", "Sid Simon", "Eve and Steve Heron", "Evan"));
         nam.add(new Adult("Joanne Heron", "34", "Looking for job", "none", "Mary Simon", "Michelle and Bob Jip", "Evan"));
         nam.add(new Children("Evan Heron", "6", "School", "none", "none", "Simon and Joanne Heron", "none"));
         nam.add(new Children("John Heron", "12", " School", "none", "Bre Evans", " Simon and Joanne Heron", "none"));
@@ -37,11 +64,11 @@ public class Array {
         nam.add(new Adult("Jason Hugh", "22", "Studting at Monash", "Image27", "Sid Simon", "Tiggy abd Vince Hugh", "none"));
 
 
-    }
+    } */
 
     public void printArray() {
-        for (int i = 0; i < nam.size(); i++) {
-            System.out.println(nam.get(i));
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
             System.out.println();
         }
     }

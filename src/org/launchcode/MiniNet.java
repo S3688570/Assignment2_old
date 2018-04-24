@@ -1,9 +1,12 @@
 package org.launchcode;
 
-import java.util.Scanner;
-import java.io.*;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class MiniNet {
+public class MiniNet extends Application {
     /**
      * <h1>MiniNet</h1>
      * MiniNet is a program simulating a social network. A social network, in the simplest sense,
@@ -24,27 +27,17 @@ public class MiniNet {
     public MiniNet() {
     }
 
-    //public static void main(String args[]) {
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        primaryStage.setTitle("Hello World");
+        primaryStage.setScene(new Scene(root, 800, 500));
+        primaryStage.show();
+    }
 
-    //   Scanner input = new Scanner(System.in);
-
-    //  Array array = new Array();
-    //  array.loadArray();
-    // array.printArray();
+    public static void main(String[] args) {
 
 
-    public static void main(String[] args)
-            throws IOException {
-        // create buffered file stream
-        BufferedReader bufr = new BufferedReader(new FileReader("C://Data//Data.txt")); //source.txt – file name (need to specify path)
-        String inputLine;
-        inputLine = bufr.readLine();
-        while (inputLine != null) {  //  more input
-            System.out.println(inputLine);
-            inputLine = bufr.readLine();
-        }
-
-        Scanner input = new Scanner(System.in);
 
         Array array = new Array();
         array.loadArray();
@@ -52,8 +45,8 @@ public class MiniNet {
 
         Driver menu = new Driver();
         menu.displayMenu();
-    }
 
+    }
 }
 
 

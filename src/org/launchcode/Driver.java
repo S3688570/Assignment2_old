@@ -1,5 +1,7 @@
 package org.launchcode;
 
+import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Driver {
@@ -38,9 +40,18 @@ public class Driver {
             switch (option) {
                 //Add a person to the network
                 case 1:
-                    AddProfiles array = new AddProfiles();
-                    array.addProfile();
-                    menuOpt.displayMenu();
+                    boolean continueInput = true;
+                    do {
+                        try {
+                            AddProfiles array = new AddProfiles();
+                            array.addProfile();
+                            continueInput = false;
+                            menuOpt.displayMenu();
+                        } catch (InputMismatchException ex) {
+                            System.out.println(ex);
+                        }
+                    } while (continueInput);
+
                     break;
 
                 //Select a person by name and print profile
@@ -90,7 +101,7 @@ public class Driver {
                     menuOpt.displayMenu();
                     break;
 
-               //Delete a person's profile
+                //Delete a person's profile
                 case 8:
                     DeleteProfile del = new DeleteProfile();
                     del.deleteProfile();
