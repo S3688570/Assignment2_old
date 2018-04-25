@@ -8,35 +8,14 @@ public class Children extends Person implements PrintPerson{
     }
 
     //Construct second Children object with specified parameters
-    public Children(String name, String age, String status, String image, String friends, String parents, String children) {
-        super(name, age, status, image, friends, parents, null);
-    }
-
-    //Construct third Children object with specified parameters
-    public Children(String name, String age, String status, String image, String friends) {
-        super(name, age, status, image, friends, null, null);
-    }
-
-    //Construct fourth Children object with specified parameters
-    public Children(String name, String age, String status, String image) {
-        super(name, age, status, image, null, null, null);
-    }
-
-    //Construct fourth Children object with specified parameters
-    public Children(String name, String age, String status) {
-        super(name, age, status, null, null, null, null);
-    }
-
-    //Construct fifth Children object with specified parameters
-    public Children(String name, String age) {
-        super(name, age, null, null, null, null, null);
+    public Children(String name, String image, String status, String gender, int age, String state) {
+        super(name, image, status, gender, age, state);
     }
 
     //Print profile parameters
     public String toString() {
-        return "Name:" + getName() + "\nAge: " + getAge() + "\nStatus: " + getStatus() + "\nImage: " + getImage() + "\nParents: " + getParents();
+        return "Name:" + getName() + "\nImage: " + getImage() + "\nStatus: " + getStatus() + "\nGender: " + getGender() + "\nAge: " + getAge() + "\nState: " + getState();
     }
-
 
 }
 

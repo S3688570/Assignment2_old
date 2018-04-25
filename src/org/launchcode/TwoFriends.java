@@ -7,7 +7,7 @@ public class TwoFriends extends Person {
 
     Scanner input = new Scanner(System.in);
 
-    //List variables
+/*    //List variables
     private String firstPerson;
     private String secondPerson;
     private String firstPersonFriends;
@@ -27,8 +27,8 @@ public class TwoFriends extends Person {
             firstPerson = input.nextLine();
         }
 
-        for (int i = 0; i < nam.size(); i++) {
-            if (firstPerson.equalsIgnoreCase(nam.get(i).getName())) {
+        for (int i = 0; i < list.size(); i++) {
+            if (firstPerson.equalsIgnoreCase(list.get(i).getName())) {
                 firstPersonNumber = 5;
             }
         }
@@ -49,8 +49,8 @@ public class TwoFriends extends Person {
         }
         System.out.println();
 
-        for (int i = 0; i < nam.size(); i++) {
-            if (secondPerson.equalsIgnoreCase(nam.get(i).getName())) {
+        for (int i = 0; i < list.size(); i++) {
+            if (secondPerson.equalsIgnoreCase(list.get(i).getName())) {
                 secondPersonNumber = 5;
             }
         }
@@ -61,11 +61,11 @@ public class TwoFriends extends Person {
         }
 
         //Determine the two people are friends
-        for (int i = 0; i < nam.size(); i++) {
-            if (firstPerson.equalsIgnoreCase(nam.get(i).getName())) {
-                firstPersonFriends = ((nam.get(i).getFriends()));
-            } else if (secondPerson.equalsIgnoreCase(nam.get(i).getName())) {
-                secondPersonFriends = ((nam.get(i).getFriends()));
+        for (int i = 0; i < list.size(); i++) {
+            if (firstPerson.equalsIgnoreCase(list.get(i).getName())) {
+                firstPersonFriends = ((list.get(i).getFriends()));
+            } else if (secondPerson.equalsIgnoreCase(list.get(i).getName())) {
+                secondPersonFriends = ((list.get(i).getFriends()));
             }
         }
 
@@ -80,6 +80,6 @@ public class TwoFriends extends Person {
     //Return a string listing object parameters
     public String toString() {
         return "Name: " + getName() + "\nAge: " + getAge() + "\nStatus: " + getStatus() + "\nImage: " + getImage()+ "\nFriends: " + getFriends() + "\nParents: " + getParents() + "\nChildren: " + getChildren();
-    }
+    } */
 }
 

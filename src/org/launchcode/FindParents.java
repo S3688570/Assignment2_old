@@ -7,7 +7,7 @@ public class FindParents extends Children {
 
     Scanner input = new Scanner(System.in);
 
-    //List variables
+/*    //List variables
     private String children;
     private String parents = "None";
 
@@ -26,9 +26,9 @@ public class FindParents extends Children {
         }
 
         //Are the person's parents recorded in the database
-        for (int i = 0; i < nam.size(); i++) {
-            if (children.equalsIgnoreCase(nam.get(i).getName())) {
-                if (nam.get(i).getParents() == null) {
+        for (int i = 0; i < list.size(); i++) {
+            if (children.equalsIgnoreCase(list.get(i).getName())) {
+                if (list.get(i).getParents() == null) {
                     parents = "No";
                     System.out.println("That person's parents are not recorded in the database.");
                     System.out.println();
@@ -38,10 +38,10 @@ public class FindParents extends Children {
         }
 
         //Retrieve child(ren)'s names for person in database
-        for (int i = 0; i < nam.size(); i++) {
-            if (children.equalsIgnoreCase(nam.get(i).getName())) {
-                if ((nam.get(i).getParents()) != null) {
-                    parents = nam.get(i).getParents();
+        for (int i = 0; i < list.size(); i++) {
+            if (children.equalsIgnoreCase(list.get(i).getName())) {
+                if ((list.get(i).getParents()) != null) {
+                    parents = list.get(i).getParents();
                     System.out.println(parents + " are the parents of " + children);
                     System.out.println();
                     break;
@@ -54,5 +54,5 @@ public class FindParents extends Children {
             System.out.println("That person is not in the database.");
             System.out.println();
         }
-    }
+    } */
 }

@@ -7,7 +7,7 @@ public class SetFriends extends Person {
 
     Scanner input = new Scanner(System.in);
 
-    //List variables
+/*    //List variables
     private int ageDiff;
     private String firstFriend;
     private String secondFriend;
@@ -86,11 +86,11 @@ public class SetFriends extends Person {
         }
 
         //Retrieve the ages for the two friends
-        for (int i = 0; i < nam.size(); i++) {
-            if (firstFriend.equalsIgnoreCase(nam.get(i).getName())) {
-                firstPersonAge = Integer.parseInt(nam.get(i).getAge());
-            } else if (secondFriend.equalsIgnoreCase(nam.get(i).getName())) {
-                secondPersonAge = Integer.parseInt(nam.get(i).getAge());
+        for (int i = 0; i < list.size(); i++) {
+            if (firstFriend.equalsIgnoreCase(list.get(i).getName())) {
+                firstPersonAge = Integer.parseInt(list.get(i).getAge());
+            } else if (secondFriend.equalsIgnoreCase(list.get(i).getName())) {
+                secondPersonAge = Integer.parseInt(list.get(i).getAge());
             }
         }
         if (firstPersonAge == 1000 || secondPersonAge == 1000) {
@@ -115,15 +115,15 @@ public class SetFriends extends Person {
     //Method to connect two people as friends
     public void addFriend() {
         if (ageOK == true) {
-            for (int i = 0; i < nam.size(); i++) {
-                if (firstFriend.equalsIgnoreCase(nam.get(i).getName())) {
-                    nam.get(i).setFriends(secondFriend);
-                    System.out.println(nam.get(i));
+            for (int i = 0; i < list.size(); i++) {
+                if (firstFriend.equalsIgnoreCase(list.get(i).getName())) {
+                    list.get(i).setFriends(secondFriend);
+                    System.out.println(list.get(i));
                     System.out.println();
 
-                } else if (secondFriend.equalsIgnoreCase(nam.get(i).getName())) {
-                    nam.get(i).setFriends(firstFriend);
-                    System.out.println(nam.get(i));
+                } else if (secondFriend.equalsIgnoreCase(list.get(i).getName())) {
+                    list.get(i).setFriends(firstFriend);
+                    System.out.println(list.get(i));
                     System.out.println();
                 }
             }
@@ -133,7 +133,7 @@ public class SetFriends extends Person {
     public String toString() {
         return "Name: " + getName() + "\nAge: " + getAge() + "\nStatus: " + getStatus() + "\nImage: " + getImage()+ "\nFriends: " + getFriends() + "\nParents: " + getParents() + "\nChildren: " + getChildren();
     }
-
+*/
 }
 
 

@@ -27,8 +27,8 @@ public class DeleteProfile extends Array {
         }
 
     //Check to determine if person is in database
-        for(int i = 0; i<nam.size();i++) {
-        if (deleteName.equalsIgnoreCase(nam.get(i).getName())) {
+        for(int i = 0; i<list.size();i++) {
+        if (deleteName.equalsIgnoreCase(list.get(i).getName())) {
             deleteNameNumber = 10;
         }
     }
@@ -39,10 +39,10 @@ public class DeleteProfile extends Array {
 
 
         //Delete person's profile
-        for (int i = 0; i < nam.size(); i++) {
-            if (deleteName.equalsIgnoreCase(nam.get(i).getName())) {
-                if (nam.get(i).getName().equals(deleteName)) {
-                    nam.remove(i);
+        for (int i = 0; i < list.size(); i++) {
+            if (deleteName.equalsIgnoreCase(list.get(i).getName())) {
+                if (list.get(i).getName().equals(deleteName)) {
+                    list.remove(i);
                     System.out.println(deleteName + "'s profile has been deleted.");
                     System.out.println();
                     break;

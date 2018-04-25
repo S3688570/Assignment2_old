@@ -7,7 +7,7 @@ public class FindChildren extends Adult {
 
     Scanner input = new Scanner(System.in);
 
-    //List variables
+/*    //List variables
     private String parent;
     private int parentNumber = 10;
 
@@ -23,15 +23,15 @@ public class FindChildren extends Adult {
             parent = input.nextLine();
         }
 
-        for (int i = 0; i < nam.size(); i++) {
-            if (parent.equalsIgnoreCase(nam.get(i).getName())) {
-                System.out.println(nam.get(i).getChildren());
+        for (int i = 0; i < list.size(); i++) {
+            if (parent.equalsIgnoreCase(list.get(i).getName())) {
+                System.out.println(list.get(i).getChildren());
                 System.out.println();
             }
         }
 
-        for (int i = 0; i < nam.size(); i++) {
-            if (parent.equalsIgnoreCase(nam.get(i).getName())) {
+        for (int i = 0; i < list.size(); i++) {
+            if (parent.equalsIgnoreCase(list.get(i).getName())) {
                 parentNumber = 5;
             }
         }
@@ -40,5 +40,5 @@ public class FindChildren extends Adult {
             System.out.println("This person is not in the database.");
             System.out.println();
         }
-    }
+    } */
 }
