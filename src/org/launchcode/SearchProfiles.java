@@ -23,7 +23,7 @@ public class SearchProfiles extends Array{
             searchPersonName = input.nextLine();
         }
 
-        for (int i = 0; i < nam.size(); i++) {
+        for (int i = 0; i < list.size(); i++) {
             if (searchPersonName.equalsIgnoreCase(nam.get(i).getName())) {
                 searchPersonNumber = 10;
             }
