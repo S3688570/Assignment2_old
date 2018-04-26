@@ -56,10 +56,10 @@ public class Driver {
 
                 //Select a person by name and print profile
                 case 2:
-                    SearchProfiles search = new SearchProfiles();
+        /*            SearchProfiles search = new SearchProfiles();
                     search.searchName();
                     menuOpt.displayMenu();
-                    break;
+                    break; */
 
                 //Output all profiles
                 case 3:
@@ -70,43 +70,43 @@ public class Driver {
 
                 //Connect two people as friends
                 case 4:
-                    //Retrieve and check ages of friends
+            /*        //Retrieve and check ages of friends
                     SetFriends setFriends = new SetFriends();
                     setFriends.checkAges();
 
                     //Set two people as friends
                     setFriends.addFriend();
                     menuOpt.displayMenu();
-                    break;
+                    break; */
 
                 //Are two people friends?
                 case 5:
-                    TwoFriends twoFriends = new TwoFriends();
+        /*            TwoFriends twoFriends = new TwoFriends();
                     twoFriends.areFriendsFirstPerson();
                     twoFriends.areFriendsSecondPerson();
                     menuOpt.displayMenu();
-                    break;
+                    break; */
 
                 //Find out the name(s) of a person's child(ren)
                 case 6:
-                    FindChildren find = new FindChildren();
+        /*            FindChildren find = new FindChildren();
                     find.findChild();
                     menuOpt.displayMenu();
-                    break;
+                    break; */
 
                 //Find out the names of a persons parents
                 case 7:
-                    FindParents par = new FindParents();
+        /*            FindParents par = new FindParents();
                     par.findParents();
                     menuOpt.displayMenu();
-                    break;
+                    break; */
 
                 //Delete a person's profile
                 case 8:
-                    DeleteProfile del = new DeleteProfile();
+        /*            DeleteProfile del = new DeleteProfile();
                     del.deleteProfile();
                     menuOpt.displayMenu();
-                    break;
+                    break; */
 
                 //Exit menu
                 case 9:

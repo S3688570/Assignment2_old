@@ -18,7 +18,7 @@ public class Adult extends Person implements PrintPerson{
     }
 
     //Construct Friend object with specified parameters
-    public Adult(String name, String image, String status, String gender, int age, String state) {
+    public Adult(String name, String image, String status, String gender, String age, String state) {
         super(name, image, status, gender, age, state);
     }
 

@@ -37,11 +37,9 @@ public class MiniNet extends Application {
 
     public static void main(String[] args) {
 
-
-
         Array array = new Array();
         array.loadArray();
-    //    array.printArray();
+        array.printArray();
 
         Driver menu = new Driver();
         menu.displayMenu();

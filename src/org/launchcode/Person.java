@@ -1,6 +1,6 @@
 package org.launchcode;
 
-public abstract class Person extends Array{
+public class Person {
     //Created by Charles Galea (March 2018)
 
     //List instance variables
@@ -8,15 +8,15 @@ public abstract class Person extends Array{
     private String image;
     private String status;
     private String gender;
-    private int age;
+    private String age;
     private String state;
 
     //Construct default Person object
-    protected Person() {
+    public Person() {
     }
 
     //Construct Person object containing specified parameters
-    protected Person(String name, String image, String status, String gender, int age, String state) {
+    public Person(String name, String image, String status, String gender, String age, String state) {
         this.name = name;
         this.image = image;
         this.status = status;
@@ -30,7 +30,7 @@ public abstract class Person extends Array{
         return name;
     }
 
-    //Return mage
+    //Return image
     public String getImage() {
         return image;
     }
@@ -85,8 +85,8 @@ public abstract class Person extends Array{
         this.state = state;
     }
 
-    //Return a string listing object parameters
-    public abstract String toString();
-
+    public String toString() {
+        return "\n" + "Name: " + getName() + "\nImage: " + getImage() + "\nStatus: " + getStatus() + "\nGender: " + getGender() + "\nAge: " + getAge() + "\nState: " + getState() + "\n";
+    }
 }
 

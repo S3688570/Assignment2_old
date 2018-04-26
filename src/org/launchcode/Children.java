@@ -8,7 +8,7 @@ public class Children extends Person implements PrintPerson{
     }
 
     //Construct second Children object with specified parameters
-    public Children(String name, String image, String status, String gender, int age, String state) {
+    public Children(String name, String image, String status, String gender, String age, String state) {
         super(name, image, status, gender, age, state);
     }
 
