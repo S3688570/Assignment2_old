@@ -1,7 +1,5 @@
 package org.launchcode;
 
-import java.util.InputMismatchException;
-import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Driver {
@@ -38,20 +36,12 @@ public class Driver {
             option = input.nextInt();
 
             switch (option) {
+
                 //Add a person to the network
                 case 1:
-                    boolean continueInput = true;
-                    do {
-                        try {
-                            AddProfiles array = new AddProfiles();
-                            array.addProfile();
-                            continueInput = false;
-                            menuOpt.displayMenu();
-                        } catch (InputMismatchException ex) {
-                            System.out.println(ex);
-                        }
-                    } while (continueInput);
-
+                    AddProfiles array = new AddProfiles();
+                    array.addProfile();
+                    menuOpt.displayMenu();
                     break;
 
                 //Select a person by name and print profile
@@ -61,7 +51,7 @@ public class Driver {
                     menuOpt.displayMenu();
                     break; */
 
-                //Output all profiles
+                    //Output all profiles
                 case 3:
                     Array fullArray = new Array();
                     fullArray.printArray();
@@ -79,7 +69,7 @@ public class Driver {
                     menuOpt.displayMenu();
                     break; */
 
-                //Are two people friends?
+                    //Are two people friends?
                 case 5:
         /*            TwoFriends twoFriends = new TwoFriends();
                     twoFriends.areFriendsFirstPerson();
@@ -87,28 +77,28 @@ public class Driver {
                     menuOpt.displayMenu();
                     break; */
 
-                //Find out the name(s) of a person's child(ren)
+                    //Find out the name(s) of a person's child(ren)
                 case 6:
         /*            FindChildren find = new FindChildren();
                     find.findChild();
                     menuOpt.displayMenu();
                     break; */
 
-                //Find out the names of a persons parents
+                    //Find out the names of a persons parents
                 case 7:
         /*            FindParents par = new FindParents();
                     par.findParents();
                     menuOpt.displayMenu();
                     break; */
 
-                //Delete a person's profile
+                    //Delete a person's profile
                 case 8:
         /*            DeleteProfile del = new DeleteProfile();
                     del.deleteProfile();
                     menuOpt.displayMenu();
                     break; */
 
-                //Exit menu
+                    //Exit menu
                 case 9:
                     System.out.println("Exit");
                     break;
